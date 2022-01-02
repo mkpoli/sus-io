@@ -1,0 +1,11 @@
+# IDE
+.vscode/
+
+# Test
+tests/*.sus
+tests/*.json
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
