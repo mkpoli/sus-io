@@ -9,3 +9,6 @@ tests/*.json
 *.pyc
 *.pyo
 __pycache__/
+
+# Distribution
+dist/
