@@ -163,7 +163,7 @@ def to_raw_objects(header: int, data: str, to_tick: Callable[[int, int, int], in
     ]
 
 def load(fp: TextIO) -> Score:
-    loads(fp.read())
+    return loads(fp.read())
 
 def loads(data: str) -> Score:
     """
