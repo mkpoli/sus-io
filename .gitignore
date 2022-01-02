@@ -9,6 +9,7 @@ tests/*.json
 *.pyc
 *.pyo
 __pycache__/
+.venv/
 
 # Distribution
 dist/
