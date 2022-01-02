@@ -40,6 +40,9 @@ with open("score.sus", "r") as fi, open("score.json", "w") as fo:
 
 - json -> dict of objects -> sus
 - Acknowledgement
+- Add example I/O
+- Contribution Guide
+- High Speed
 - etc.
 
 ## License
