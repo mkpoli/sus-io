@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "sus-io"
+version = "0.1.0"
+description = "A SUS (Sliding Universal Score) parser and generator."
+authors = ["mkpoli <mkpoli@mkpo.li>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/mkpoli/sus-io#readme"
+repository = "https://github.com/mkpoli/sus-io"
+keywords = ["sus", "pjsekai", "chunithm", "seaurchin"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Games/Entertainment :: Arcade",
+    "Topic :: Utilities"
+]
+packages = [
+    { include = "sus", from = "src" }
+]
+include = [
+    "LICENSE",
+    "README.md",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dataclasses-json = "^0.5.6"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+test = "tests.test:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
