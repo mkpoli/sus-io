@@ -24,8 +24,8 @@ include = [
 ]
 
 [tool.poetry.urls]
-issues = "https://github.com/mkpoli/sus-io/issues"
-changelog = "https://github.com/mkpoli/sus-io/blob/main/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/mkpoli/sus-io/issues"
+"Changelog" = "https://github.com/mkpoli/sus-io/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
