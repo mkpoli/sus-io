@@ -75,9 +75,9 @@ def process_score(lines: list[tuple[str]], metadata: list[tuple[str]]) -> Score:
     bars = list(reversed(
         [
             (
-                measure, beats * ticks_per_beat,
+                measure, int(beats * ticks_per_beat),
                 ticks := ticks +
-                    ((measure - sorted_bar_lengths[i - 1][0]) * sorted_bar_lengths[i - 1][1] * ticks_per_beat if i > 0 else 0)
+                    int((measure - sorted_bar_lengths[i - 1][0]) * sorted_bar_lengths[i - 1][1] * ticks_per_beat if i > 0 else 0)
             ) for i, (measure, beats) in enumerate(sorted_bar_lengths)
         ]
     ))
@@ -87,7 +87,7 @@ def process_score(lines: list[tuple[str]], metadata: list[tuple[str]]) -> Score:
         if not bar: raise ValueError(f'Measure {measure} is out of range.')
         (bar_measure, ticks_per_measure, ticks) = bar
         
-        return ticks + (measure - bar_measure) * ticks_per_measure + (i * ticks_per_measure) / total
+        return ticks + (measure - bar_measure) * ticks_per_measure + (i * ticks_per_measure) // total
 
     bpm_map = {}
     bpm_change_objects = []
