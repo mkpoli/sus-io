@@ -1,5 +1,16 @@
 # Change Log
 
+## [0.2.0] - 2021-01-03
+
+### Added
+
+- Added sus generator.
+- Exported ``Score``, ``Metadata``, and ``Note`` class.
+
+### Fixed
+
+- Fixed tick is not int.
+
 ## [0.1.1] - 2021-01-03
 
 ### Fixed
