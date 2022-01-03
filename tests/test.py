@@ -18,6 +18,8 @@ def main():
             score = sus.load(fi)
             fo.write(score.to_json(indent=4))
             
+            print(sus.Score.from_json(score.to_json(indent=4)))
+            
             sus.dump(score, fd, comment='Custom comment.', space=True)
         print('----------------------------------------------------------------')
         print()
