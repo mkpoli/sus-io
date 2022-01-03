@@ -44,3 +44,9 @@ class Score:
     slides: list[list[Note]]
     bpms: list[tuple[int, float]]
     bar_lengths: list[tuple[int, float]]
+    
+@dataclass
+class BarLength:
+    start_tick: int
+    measure: int
+    value: float
