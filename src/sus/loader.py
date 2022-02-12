@@ -67,6 +67,10 @@ def process_score(lines: list[tuple[str]], metadata: list[tuple[str]]) -> Score:
     for header, data in lines:
         if len(header) == 5 and header.endswith('02') and header.isdigit():
             bar_lengths.append((int(header[0:3]), float(data)))
+
+    if len(bar_lengths) == 0:
+        logger.warning('No bar lengths found, adding default 4/4 time signature (#00002:4)...')
+        bar_lengths.append((0, 4.0))    
     
     sorted_bar_lengths = sorted(bar_lengths, key=lambda x: x[0])
 
