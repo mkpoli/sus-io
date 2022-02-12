@@ -57,6 +57,13 @@ with open("score.sus", 'r') as fi, open(sus_file.with_suffix('.dumped.sus'), 'w'
 - High Speed
 - etc.
 
+## Links
+
+### Javascript
+- [``sus-io (npm)``](https://www.npmjs.com/package/sus-io)
+- [``sus-parse (npm)``](https://www.npmjs.com/package/sus-parse)
+- [``sus-stringify (npm)``](https://www.npmjs.com/package/sus-stringify)
+
 ## License
 
 MIT © 2021 mkpoli
